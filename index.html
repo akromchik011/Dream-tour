@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DreamTour</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Nunito"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/icons/android-chrome-192x192.png"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.3.1/i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/6.2.1/i18nextBrowserLanguageDetector.min.js"></script>
+  </head>
+  <body>
+    <header data-aos="ade-down" data-aos-duration="2000">
+      <nav id="Navbar">
+        <div class="logo">
+          <a href="#section1">
+            <img
+              class="nav-logo"
+              src="./images/Black_and_Orange_Simple_Geometric_Tour_Travel_Logo___2_-removebg-preview.png"
+              alt=""
+          /></a>
+        </div>
+
+        <div class="links">
+          <a class="line" id="asosiy" href="#section1">Asosiy</a>
+          <a
+            class="line"
+            id="xaqimizda"
+            style="transition: 0.3 linear"
+            href="#about"
+            >Biz xaqimizda</a
+          >
+          <a class="line" id="xizmat" href="#section2">Xizmatlar</a>
+          <a class="line" id="pak" href="#section3">Paketlar</a>
+
+          <select name="lang" id="langSelect" onchange="changeLanguage()">
+            <option value="uz">Uzb</option>
+            <option value="ru">Rus</option>
+            <option value="en">Eng</option>
+          </select>
+
+          <button class="btn">
+            <a href="#section4" id="b">Bron qilish</a>
+          </button>
+        </div>
+        <div class="nav-icon">
+          <span class="btn1"></span>
+          <span class="remove"></span>
+          <span class="btn2"></span>
+        </div>
+      </nav>
+      <button class="menu">
+        <a class="" id="asosiy1" href="#section1">Asosiy</a>
+        <a class="" id="xaqimizda1" href="#about">Biz xaqimizda</a>
+        <a class="" id="xizmat1" href="#section2">Xizmatlar</a>
+        <a class="" id="pak1" href="#section3">Paketlar</a>
+      </button>
+    </header>
+
+    <div class="container" style="top: 0">
+      <div class="header" id="section1">
+        <div class="center-text">
+          <h1 id="title" data-aos="fade-up" data-aos-duration="1000">
+            Ta'tilingizni biz bilan maroqli o'tkazing
+          </h1>
+          <p data-aos="fade-up" data-aos-duration="2000" id="biz">
+            Biz ta'tilingizni maroqli o'tishini kafolatlaymiz
+          </p>
+          <div class="inp" data-aos="fade-up" data-aos-duration="2500">
+            <input placeholder="name of city..." type="text" />
+            <button id="qid">qidirish</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="about">
+        <div
+          id="about"
+          class="about-right"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <span class="pAbout" id="ab">Biz haqimizda</span>
+          <h1 class="h1lar" id="abo">Bizning agentligimizga xush kelibsiz</h1>
+          <p id="blar">
+            “Dream Tour” sayyohlik agentligi 2022 yildan buyon turizm bozoriga
+            oʻz xizmatlarini koʻrsatib kelmoqda. Bizning jamoa turizm sohasida
+            katta tajribaga ega, o'z sohasining haqiqiy professionallaridir. Biz
+            mijozlarimizni qadrlaymiz.Biz mijozlarimiz o'z ta'tillarini bir umr
+            eslab qolishlariga va ularga yorqin taassurotlar va ijobiy
+            his-tuyg'ular qoldirishlariga vada beramiz.
+          </p>
+
+          <div class="spans">
+            <div class="span-left">
+              <div>
+                <img src="./images/Symbol@2x.png" alt="" />
+                <p id="pr">Birinchi darajali parvozlar</p>
+              </div>
+              <div>
+                <img src="./images/Symbol@2x.png" alt="" />
+                <p id="meh">5 yulduzli mehmonxonalar</p>
+              </div>
+              <div>
+                <img src="./images/Symbol@2x.png" alt="" />
+                <p id="yu">150 ta Premium shahar sayohatlari</p>
+              </div>
+            </div>
+
+            <div class="span-right">
+              <div>
+                <img src="./images/Symbol@2x.png" alt="" />
+                <p id="ta">Tanlangan mehmonxonalar</p>
+              </div>
+              <div>
+                <img src="./images/Symbol@2x.png" alt="" />
+                <p id="zor">Eng so'nggi rusumdagi avtomobillar</p>
+              </div>
+              <div>
+                <img src="./images/Symbol@2x.png" alt="" />
+                <p id="ser">24/7 xizmat</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="about-left"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        >
+          <img
+            style="width: 100%; height: 100%; position: relative"
+            src="./images/2511b41824.webp"
+          />
+        </div>
+      </div>
+
+      <div class="services" id="section2">
+        <div class="hedlines" data-aos="fade-up" data-aos-duration="1500">
+          <span id="xiz2">Xizmatlar</span>
+          <h1 id="bizxiz" data-aos="fade-up" data-aos-duration="2000">
+            Bizning Xizmatlarimiz
+          </h1>
+        </div>
+
+        <div class="cards">
+          <div class="card" data-aos="fade-up" data-aos-duration="500">
+            <img src="./icons/icon1.png" alt="" />
+            <h1 id="har">Har qanday turlar</h1>
+            <p id="siz1">
+              Biz bilan siz dunyoning xohlagan joyiga borishingiz mumkin.
+            </p>
+          </div>
+
+          <div class="card" data-aos="fade-up" data-aos-duration="1000">
+            <img src="./icons/icon2.png" alt="" />
+            <h1 id="mex">Mehmonxonalar</h1>
+            <p id="tas">
+              Biz tasdiqlangan obro'ga va ajoyib sharhlarga ega mehmonxonalarni
+              tavsiya qilamiz.
+            </p>
+          </div>
+          <div class="card" data-aos="fade-up" data-aos-duration="500">
+            <img src="./icons/icon3.png" alt="" />
+            <h1 id="gid">Gid hamrohligi</h1>
+            <p id="gsiz">Siz uchun tajribali mutaxassislar hamrohligi.</p>
+          </div>
+
+          <div class="card" data-aos="fade-up" data-aos-duration="1000">
+            <img class="test" src="./images/wallet (1).png" alt="" />
+            <h1 id="qu">Qulay to'lov</h1>
+            <p id="tur">
+              Siz turli xil variantlardan mos to'lov usulini tanlaysiz.
+            </p>
+          </div>
+
+          <div class="card" data-aos="fade-up" data-aos-duration="1000">
+            <img src="./icons/icon4.png" alt="" />
+            <h1 id="serv">24/7 xizmat</h1>
+            <p id="sav">
+              Savollaringizga telefon va messenjerlar orqali javob beramiz.
+            </p>
+          </div>
+
+          <div class="card" data-aos="fade-up" data-aos-duration="500">
+            <img class="test" src="./images/discipline.png" alt="" />
+            <h1 id="qil">Tez bron qilish</h1>
+            <p id="xar">
+              Xarajatlaringizni tejash uchun tezkor bron qilish xizmati.
+            </p>
+          </div>
+          <div class="card" data-aos="fade-up" data-aos-duration="1000">
+            <img class="test" src="./icons/plane-ticket (1).png" alt="" />
+            <h1 id="narx">Qulay narxlar</h1>
+            <p id="qan">
+              Har qanday turni bron qilish. raqobatbardosh narxlarda xizmatlar.
+            </p>
+          </div>
+
+          <div class="card" data-aos="fade-up" data-aos-duration="500">
+            <img class="test" src="./icons/secure.png" alt="" />
+            <h1 id="ish">Ishonchlilik</h1>
+            <p id="faol">
+              Biz faoliyatimiz davomida biz 1000 ortiq sayyohlarni ta’tilga
+              jo‘natdik.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deshead" data-aos="zoom-in" data-aos-duration="500">
+        <p id="yon">Yo'nalishlar</p>
+        <h1 data-aos="zoom-in" data-aos-duration="100" id="mash">
+          Mashhur yo'nalishlar
+        </h1>
+      </div>
+
+      <div class="destinations">
+        <div class="gallery">
+          <div class="gallery-left">
+            <div
+              class="gallery-top"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <img src="./images/1589538070_252779.jpg" alt="" />
+            </div>
+            <div class="gallery-bootom">
+              <div
+                class="bottom-left"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
+                <img
+                  src="./images/96115b8f9da075dc3476f86e13f83faa.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div
+                class="bottom-right"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
+                <img
+                  src="./images/sydney-opera-house-city-view-fwsdu0jh7azrl7z4.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-right"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
+            <img src="./images/Colosseum-in-Rome.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="packhead" id="section3">
+        <p data-aos="fade-up" id="pac" data-aos-duration="1000">Paketlar</p>
+        <h1 data-aos="fade-down" data-aos-duration="2000" id="aj">
+          Ajoyib paketlar
+        </h1>
+      </div>
+
+      <div class="pack-card">
+        <div class="card-left" data-aos="fade-up" data-aos-duration="500">
+          <div class="imag">
+            <img class="card-img" src="./images/16.jpg" alt="" />
+          </div>
+          <div class="information">
+            <div class="info-left">
+              <img src="./icons/loc.png" alt="" />
+              <p id="dub">Dubai</p>
+            </div>
+            <div class="info-mid">
+              <img src="./icons/date.png" alt="" />
+              <p id="kun1">7 kun</p>
+            </div>
+            <div class="info-right">
+              <img src="./icons/per.png" alt="" />
+              <p id="od1">2 Odam</p>
+            </div>
+          </div>
+          <h1>$449.00</h1>
+          <div class="stars">
+            <img src="./icons/star.png" alt="" />
+            <img src="./icons/star.png" alt="" />
+            <img src="./icons/star.png" alt="" />
+            <img src="./icons/star.png" alt="" />
+            <img src="./icons/star.png" alt="" />
+          </div>
+          <span id="span1"
+            >Bizning hamyonbop sayohatlarimiz bilan BAAni o'rganing. Dubay, Ras
+            Al Xayma va Abu Dabiga sayohatlarni eng yaxshi narxlarda bron
+            qiling.</span
+          >
+        </div>
+        <div class="card-mid" data-aos="fade-up" data-aos-duration="1000">
+          <div class="card-left">
+            <div class="imag">
+              <img
+                class="card-img"
+                src="./images/1667576938_25-sportishka-com-p-arena-bich-maldivi-oboi-31.jpg"
+                alt=""
+              />
+            </div>
+            <div class="information">
+              <div class="info-left">
+                <img src="./icons/loc.png" alt="" />
+                <p id="mal">Maldiv</p>
+              </div>
+              <div class="info-mid">
+                <img src="./icons/date.png" alt="" />
+                <p id="kun2">7 kun</p>
+              </div>
+              <div class="info-right">
+                <img src="./icons/per.png" alt="" />
+                <p id="od2">5 Odam</p>
+              </div>
+            </div>
+            <h1>$999.00</h1>
+            <div class="stars">
+              <img src="./icons/star.png" alt="" />
+              <img src="./icons/star.png" alt="" />
+              <img src="./icons/star.png" alt="" />
+              <img src="./icons/star.png" alt="" />
+              <img src="./icons/star.png" alt="" />
+            </div>
+            <span id="span2"
+              >Oilaviy dam olish uchun eng yaxshisi Maldiv orollari. Maldiv
+              orollarida oilaviy dam olish markaziy o'rinni egallaydi.</span
+            >
+          </div>
+        </div>
+        <div class="card-right" data-aos="fade-up" data-aos-duration="2000">
+          <div class="card-left">
+            <div class="imag">
+              <img class="card-img" src="./images/malaysia-3-2.jpg" alt="" />
+            </div>
+            <div class="information">
+              <div class="info-left">
+                <img src="./icons/loc.png" alt="" />
+                <p id="malaz">Malayziya</p>
+              </div>
+              <div class="info-mid">
+                <img src="./icons/date.png" alt="" />
+                <p id="kun3">3 kun</p>
+              </div>
+              <div class="info-right">
+                <img src="./icons/per.png" alt="" />
+                <p id="od3">2 odam</p>
+              </div>
+            </div>
+            <h1>$549.00</h1>
+            <div class="stars">
+              <img src="./icons/star.png" alt="" />
+              <img src="./icons/star.png" alt="" />
+              <img src="./icons/star.png" alt="" />
+              <img src="./icons/star.png" alt="" />
+              <img src="./icons/star.png" alt="" />
+            </div>
+            <span id="span4"
+              >Boy madaniy tarix butun dunyodan ko'plab sayyohlarni o'ziga jalb
+              qiluvchi Malayziya ko'p madaniyatli merosga, yam-yashil
+              o'rmonlarga va chiroyli plyajlarga ega.</span
+            >
+          </div>
+        </div>
+        <div class="card-right" data-aos="fade-up" data-aos-duration="500">
+          <div class="card-left">
+            <div class="imag">
+              <img
+                class="card-img"
+                src="./images/2020World___France_High_Eiffel_Tower_under_the_beautiful_sky_of_Paris__France_147787_.jpg"
+                alt=""
+              />
+            </div>
+            <div class="information">
+              <div class="info-left">
+                <img src="./icons/loc.png" alt="" />
+                <p id="fr">Fransiya</p>
+              </div>
+              <div class="info-mid">
+                <img src="./icons/date.png" alt="" />
+                <p id="kun5">5 kun</p>
+              </div>
+              <div class="info-right">
+                <img src="./icons/per.png" alt="" />
+                <p id="od4">2 Odam</p>
+              </div>
+            </div>
+            <h1>$649.00</h1>
+            <div class="stars">
+              <img src="./icons/star.png" alt="" />
+              <img src="./icons/star.png" alt="" />
+              <img src="./icons/star.png" alt="" />
+              <img src="./icons/star.png" alt="" />
+              <img src="./icons/star.png" alt="" />
+            </div>
+            <span id="span5"
+              >Parij odamlarni o'ziga jalb qiladigan rang-barang shahar. Eyfel
+              minorasidan tashqari, Parijda keng xiyobonlar va ularning
+              maftunkor kafelari va diqqatga sazovor joylari mavjud.</span
+            >
+          </div>
+        </div>
+        <div class="card-right" data-aos="fade-up" data-aos-duration="1000">
+          <div class="card-left">
+            <div class="imag">
+              <img
+                class="card-img"
+                src="./images/1646741616_16-sportishka-com-p-tailand-ostrov-pkhuket-turizm-krasivo-foto-17.jpg"
+                alt=""
+              />
+            </div>
+            <div class="information">
+              <div class="info-left">
+                <img src="./icons/loc.png" alt="" />
+                <p id="tai">Tailand</p>
+              </div>
+              <div class="info-mid">
+                <img src="./icons/date.png" alt="" />
+                <p id="kun6">7 kun</p>
+              </div>
+              <div class="info-right">
+                <img src="./icons/per.png" alt="" />
+                <p id="od5">2 Odam</p>
+              </div>
+            </div>
+            <h1>$749.00</h1>
+            <div class="stars">
+              <img src="./icons/star.png" alt="" />
+              <img src="./icons/star.png" alt="" />
+              <img src="./icons/star.png" alt="" />
+              <img src="./icons/star.png" alt="" />
+              <img src="./icons/star.png" alt="" />
+            </div>
+            <span id="span6"
+              >Tailand tanlash uchun eng go'zal orollarning keng assortimentini
+              taklif etadi. Bu joy issiq quyosh nuridan bahramand bo'lish uchun
+              eng zo'r joy.</span
+            >
+          </div>
+        </div>
+        <div class="card-right" data-aos="fade-up" data-aos-duration="1500">
+          <div class="card-left">
+            <div class="imag">
+              <img
+                class="card-img"
+                src="./images/28-pic4_zoom-1500x1500-29032.jpg"
+                alt=""
+              />
+            </div>
+            <div class="information">
+              <div class="info-left">
+                <img src="./icons/loc.png" alt="" />
+                <p id="turk">Turkiya</p>
+              </div>
+              <div class="info-mid">
+                <img src="./icons/date.png" alt="" />
+                <p id="kun7">7 kun</p>
+              </div>
+              <div class="info-right">
+                <img src="./icons/per.png" alt="" />
+                <p id="od6">2 Odam</p>
+              </div>
+            </div>
+            <h1>$549.00</h1>
+            <div class="stars">
+              <img src="./icons/star.png" alt="" />
+              <img src="./icons/star.png" alt="" />
+              <img src="./icons/star.png" alt="" />
+              <img src="./icons/star.png" alt="" />
+              <img src="./icons/star.png" alt="" id="section4" />
+            </div>
+            <span id="span8"
+              >Ajoyib plyajlar, muzeylar, shahar hayoti, tungi hayot,tabiat,
+              basseynlar sizga yoqadimi? Unda bu taklifimiz aynan siz uchun.
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="form-main"
+        data-aos="zoom-in"
+        id="section4"
+        data-aos-duration="700"
+      >
+        <div class="form-left" data-aos="fade-up" data-aos-duration="1000">
+          <h1 id="onl" data-aos="fade-up" data-aos-duration="500">
+            Onlayn bron qilish
+          </h1>
+          <p id="in" data-aos="fade-up" data-aos-duration="2000">
+            Bizda onlayn bron qilish xizmati mavjud. Biz bilan siz xohlagan
+            mamlakatga onlayn buyurtma berish orqali borishingiz mumkin. <br />
+            Bizning sizning ta'tilingizni maroqli o'tishini kafolatlaymiz.
+            <br />
+            Biz xizmatimiz 24/7 ishlaydi.
+          </p>
+          <button
+            class="left-btn"
+            id="malumot"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            Ma'lumot
+          </button>
+        </div>
+        <div class="form-right">
+          <h1 id="bron1" data-aos="fade-up" data-aos-duration="500">
+            Turni bron qilish
+          </h1>
+          <!-- <form action=""> -->
+          <div class="formlar" data-aos="fade-up" data-aos-duration="800">
+            <input type="text" id="message" placeholder="Your Name" />
+            <input type="date" id="message1" placeholder="Date & Time" />
+          </div>
+          <div class="formlar" data-aos="fade-up" data-aos-duration="1200">
+            <input type="email" id="message0" placeholder="Your Email" />
+            <input type="text" id="message2" placeholder="Destination " />
+          </div>
+
+          <textarea
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            id="message3"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Special Request"
+          ></textarea>
+          <button
+            id="btn1"
+            class="form-btn"
+            data-aos="fade-up"
+            data-aos-duration="1700"
+          >
+            Hozir band qilish
+          </button>
+          <!-- </form> -->
+        </div>
+      </div>
+
+      <p class="pro-head" data-aos="fade-up" data-aos-duration="1000" id="jar">
+        Jarayon
+      </p>
+      <h1 class="hbir" data-aos="fade-up" data-aos-duration="2000" id="qad">
+        3 oson qadam
+      </h1>
+
+      <div class="steps">
+        <div class="step-left" data-aos="fade-up" data-aos-duration="2000">
+          <img class="planet" src="./icons/planet.png" alt="" />
+          <div class="step-info">
+            <img src="./icons/Separator1.png" alt="" />
+            <img src="./icons/Separator.png" alt="" />
+            <p id="step1">
+              Biz bilan bog'laning va o'zingiz bormoqchi bo'lgan mamlakatni
+              tanlang.
+            </p>
+          </div>
+        </div>
+        <div class="step-mid" data-aos="fade-up" data-aos-duration="1000">
+          <img class="planet" src="./icons/money.png" alt="" />
+          <div class="step-info">
+            <img src="./icons/Separator1.png" alt="" />
+            <img src="./icons/Separator.png" alt="" />
+
+            <p id="step2">
+              Va turli xil variantlardan mos to'lov usulini tanlang va to'lov
+              qiling.
+            </p>
+          </div>
+        </div>
+        <div class="step-right" data-aos="fade-up" data-aos-duration="500">
+          <img class="planet" src="./icons/plane.png" alt="" />
+          <div class="step-info">
+            <img src="./icons/Separator1.png" alt="" />
+            <img src="./icons/Separator.png" alt="" />
+            <p id="step3">Va orzuingizdagi turni biz bilan amalga oshiring.</p>
+          </div>
+        </div>
+      </div>
+      <h1
+        style="text-align: center"
+        data-aos="fade-up"
+        class="man"
+        id="man"
+        data-aos-duration="500"
+      >
+        Bizning manzil
+      </h1>
+      <div class="map" data-aos="zoom-in" data-aos-duration="1000">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d850.320346607594!2d69.2031595500395!3d41.27535516331628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1708870166973!5m2!1sru!2s"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div
+        style="flex-wrap: wrap"
+        class="footer"
+        data-aos="fades-down"
+        data-aos-duration="2000"
+      >
+        <div class="footer-company">
+          <div><h1 id="komp">Kompaniya</h1></div>
+
+          <div class="hov">
+            <div>
+              <img src="./icons/right-arrow.png" alt="" />
+              <a class="lines" href="#section1" id="as8">Asosiy</a>
+            </div>
+            <div>
+              <img src="./icons/right-arrow.png" alt="" />
+              <a class="lines" href="#about" id="bx">Biz xaqimizda</a>
+            </div>
+            <div>
+              <img src="./icons/right-arrow.png" alt="" />
+              <a class="lines" href="#section2" id="xx">Xizmatlar</a>
+            </div>
+            <div>
+              <img src="./icons/right-arrow.png" alt="" />
+              <a class="lines" href="#section3" id="pak3">Paketlar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-contact">
+          <div><h1 id="kon">Kontaktlar</h1></div>
+          <div class="contactlar">
+            <div>
+              <img src="./icons/location-pin.png" alt="" />
+              <p id="loc">O'zbrkiston, Toshkent shaxar.</p>
+            </div>
+            <div>
+              <img src="./icons/call (2).png" alt="" />
+              <p>+998 33 181 02 02</p>
+            </div>
+            <div>
+              <img src="./icons/email.png" alt="" />
+              <p>+998 91 011 96 41</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-gallery">
+          <div><h1 id="gal">Galereya</h1></div>
+          <div class="gallery-main">
+            <div>
+              <img
+                src="./images/42476-Gili-Lankanfushi-Maldives-Best-Hotels-of-2017-Best-beaches-of-2017-tourism-travel-vacation-resort-beach-Lankanfushi-Island-North-Male-Atoll.jpg"
+                alt=""
+              />
+            </div>
+            <div><img src="./images/malaysia-3-2.jpg" alt="" /></div>
+            <div class="none">
+              <img src="./images/1589538070_252779.jpg" alt="" />
+            </div>
+            <div>
+              <img
+                src="./images/bd90d00f641dccfce48ffc90b73cb94a.jpeg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="./images/sydney-opera-house-city-view-fwsdu0jh7azrl7z4.jpg"
+                alt=""
+              />
+            </div>
+            <div class="none">
+              <img src="./images/96115b8f9da075dc3476f86e13f83faa.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-questions">
+          <div><h1 id="savol">Savollar</h1></div>
+          <div class="footer-inp">
+            <p id="last">
+              Xar qanday o'zingizni qiziqtirgan savollaringizni yozishingiz
+              mumkin.
+            </p>
+
+            <form class="footer-form" action="">
+              <input
+                type="text"
+                name=""
+                id="footer-input"
+                placeholder="questions"
+              />
+              <button class="footer-btn" id="btn5">yuborish</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
